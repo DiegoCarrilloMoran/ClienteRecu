@@ -1,0 +1,54 @@
+<!-- 
+  por temas de legibildad y mantenimiento de código siempre es preferible los scripts en arhivos separados
+  ventajas, otras páginas que hagan referencia al mismo script lo tomarán del cache en lugar de descargarlo = el archivo solo se descarga una vez
+  eso reduce el tráfico y hace que las páginas sean más rápidas
+ -->
+
+<!-- script externos -->
+<script src="/path/to/script.js"></script>
+<!-- 
+  cuando tenemos un src si existe código dentro, dicho código se ignora
+  si queremos tener un script externo e interno tentremos que tener dos etiquetas script
+-->
+
+<!-- 
+  podemos tener tantas sentencias querramos en una misma linea. pero deberemos separarlas con un " ; "
+  las sentencias se suelen escirbrir en lineas separadas para la legibildad,
+  en la mayorñia de los casos un salto de linea significa " ; " 
+-->
+
+<script>
+  "use strict"
+</script>
+<!-- 
+  se escribe este string al principio del código SIEMPRE, 
+  el script entero funciona de la manera moderna
+ -->
+
+<script>
+  let user = 'John'
+    , years = 25
+    , message = 'Hola';
+</script>
+
+<!-- 
+  este será el modelo que utilizare a la hora de declara variables
+
+  las variables pueden tener números, letras, '$' y '_'
+  no pueden empezar por un número, y las mayusculas influyen
+  hay nombres reservado que no se pueden usar para nombrar variables ej. let, class, return, function
+  -->
+
+<script>
+  const BIRTHDAY = '18.04.1982'; // el valor esta hard-codeado por o que se pone en mayusculas
+
+  const age = someCode(BIRTHDAY); // aunque vaya a ser una constante, esta constante se cálcula por lo que la nombraremos en minúsculas
+</script>
+
+<!-- otro ejemplo de uso de constantes -->
+<script>
+  const COLOR_RED = "#F00"
+    , COLOR_GREEN = "#0F0"
+    , COLOR_BLUE = "#00F"
+    , COLOR_ORANGE = "#FF7F00";
+</script>
